@@ -92,37 +92,37 @@ const HomePage = () => {
 
   return (
     <div>
-      <div className="relative h-[50vh] -mt-[4rem] mb-4 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center parallax-bg"
-          style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1698319496731-f62cbc83734e?q=80&w=3089&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
-            transform: 'translate3d(0, 0, 0)',
-            height: '120%', // Extra height for parallax effect
-            top: '-10%' // Start slightly above
-          }}
-        >
-          <div className="absolute inset-0 bg-black/30"></div>
-        </div>
+<div className="relative h-[50vh] -mt-[4rem] mb-4 overflow-hidden">
+  <div 
+    className="absolute inset-0 bg-cover bg-center parallax-bg"
+    style={{
+      backgroundImage: 'url("https://images.unsplash.com/photo-1567697764010-09b279bc568d?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+      transform: 'translate3d(0, 0, 0)',
+      height: '120%',
+      top: '-10%'
+    }}
+  >
+    <div className="absolute inset-0 bg-black/30"></div>
+  </div>
 
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
-          <div className="text-center space-y-8 max-w-3xl w-full">
-            <h2 className="text-8xl font-bold border-2 border-white px-16 py-8 inline-block shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-              HoliDaze
-            </h2>
+  <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4 sm:px-6 md:px-8">
+    <div className="text-center space-y-20 sm:space-y-8 max-w-3xl w-full"> {/* Increased space on mobile */}
+      <h2 className="text-6xl sm:text-6xl md:text-7xl lg:text-8xl font-bold border-2 border-white px-4 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-6 md:py-8 inline-block shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+        HoliDaze
+      </h2>
             
-            <div className="relative max-w-2xl mx-auto">
-              <input
-                type="text"
-                placeholder="Search venues by name, location, or price..."
-                value={searchValue}
-                onChange={(e) => setSearchValue(e.target.value)}
-                className="w-full px-6 py-4 rounded-full text-gray-900"
-              />
-            </div>
-          </div>
-        </div>
+      <div className="relative w-full px-0 mx-auto sm:px-0 sm:max-w-2xl">
+        <input
+          type="text"
+          placeholder="Search venues by name, location, or price..."
+          value={searchValue}
+          onChange={(e) => setSearchValue(e.target.value)}
+          className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-none sm:rounded-full text-gray-900"
+        />
       </div>
+    </div>
+  </div>
+</div>
 
       <div id="venues-section" className="p-6">
         <div className="mt-2">
