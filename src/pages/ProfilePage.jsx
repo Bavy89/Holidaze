@@ -241,7 +241,7 @@ const ProfilePage = () => {
       {isOwnProfile && (
         <button
           onClick={() => setEditing(true)}
-          className="bg-cyan-600 text-white py-2 px-4 rounded mt-4 hover:bg-cyan-700 transition"
+          className="bg-cyan-600 text-white py-2 px-4 rounded mt-4 hover:bg-cyan-700 transform hover:-translate-y-1 hover:shadow-md transition-all duration-200"
         >
           Edit Profile
         </button>
@@ -258,7 +258,7 @@ const ProfilePage = () => {
       <div className="flex flex-wrap justify-center mb-6 space-x-4">
         <button
           onClick={() => navigate("/create")}
-          className="bg-cyan-600 text-white py-2 px-4 rounded hover:bg-cyan-700 transition"
+          className="bg-cyan-600 text-white py-2 px-4 rounded hover:bg-cyan-700 transform hover:-translate-y-1 hover:shadow-md transition-all duration-200"
         >
           Create Venue
         </button>
