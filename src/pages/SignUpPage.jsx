@@ -55,124 +55,132 @@ const SignUpPage = () => {
 
   if (isSelectPage) {
     return (
-      <div className="flex flex-col items-center min-h-screen pt-36">
-        <h1 className="text-3xl text-text mb-8">Sign up</h1>
+      <div className="flex flex-col items-center min-h-screen pt-24 bg-gray-50">
+        <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
+          <h1 className="text-4xl font-bold text-center text-cyan-600 mb-8">Sign up</h1>
 
-        <p className="text-lg mb-4 text-text">Sign up as</p>
+          <p className="text-lg mb-6 text-center text-gray-600">Choose your account type</p>
 
-        <Link
-          onClick={() => {
-            setIsSelectPage(false);
-            setIsVenueManger(true);
-          }}
-          className="w-64 py-6 mb-4 bg-main-red text-background rounded font-semibold text-center"
-        >
-          Venue Manager
-        </Link>
-
-        <p className="text-lg mb-4 text-text">or</p>
-
-        <button
-          onClick={() => {
-            setIsSelectPage(false);
-            setIsVenueManger(false);
-          }}
-          className="w-64 py-6 mb-4 bg-main-red text-background rounded font-semibold text-center"
-        >
-          Guest
-        </button>
-
-        <p className="text-text">
-          Already have an account?{" "}
           <Link
-            to="/login"
-            className="text-red-700 underline hover:text-red-800"
+            onClick={() => {
+              setIsSelectPage(false);
+              setIsVenueManger(true);
+            }}
+            className="w-full py-4 mb-6 bg-cyan-600 text-white rounded-lg font-semibold text-center hover:bg-cyan-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-md flex items-center justify-center space-x-2"
           >
-            Log in here!
+            <span className="text-lg">Venue Manager</span>
           </Link>
-        </p>
+
+          <div className="relative flex items-center justify-center mb-6">
+            <div className="border-t border-gray-300 w-full"></div>
+            <span className="bg-white px-4 text-gray-500 text-sm">or</span>
+            <div className="border-t border-gray-300 w-full"></div>
+          </div>
+
+          <button
+            onClick={() => {
+              setIsSelectPage(false);
+              setIsVenueManger(false);
+            }}
+            className="w-full py-4 mb-8 bg-cyan-600 text-white rounded-lg font-semibold text-center hover:bg-cyan-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-md flex items-center justify-center space-x-2"
+          >
+            <span className="text-lg">Guest</span>
+          </button>
+
+          <p className="text-center text-gray-600">
+            Already have an account?{" "}
+            <Link
+              to="/login"
+              className="text-cyan-600 font-semibold hover:text-cyan-700 underline"
+            >
+              Log in here!
+            </Link>
+          </p>
+        </div>
       </div>
     );
   } else {
     return (
-      <div className="flex flex-col items-center min-h-screen p-6 pt-36">
-        <h1 className="text-3xl text-text mb-8">Sign up</h1>
+      <div className="flex flex-col items-center min-h-screen p-6 pt-24 bg-gray-50">
+        <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
+          <h1 className="text-4xl font-bold text-center text-cyan-600 mb-8">Sign up</h1>
 
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="w-full max-w-sm space-y-4"
-        >
-          <div>
-            <label className="block text-text text-sm font-medium mb-1">
-              Full name
-            </label>
-            <input
-              type="text"
-              {...register("fullName")}
-              placeholder="John Doe"
-              className="w-full border border-gray-300 rounded px-3 py-2 text-text"
-            />
-            <p className="text-red-500 text-sm">{errors.fullName?.message}</p>
-          </div>
-
-          <div>
-            <label className="block text-text text-sm font-medium mb-1">
-              Email
-            </label>
-            <input
-              type="email"
-              {...register("email")}
-              placeholder="John@stud.noroff.no"
-              className="w-full border border-gray-300 rounded px-3 py-2 text-text"
-            />
-            <p className="text-red-500 text-sm">{errors.email?.message}</p>
-          </div>
-
-          <div>
-            <label className="block text-text text-sm font-medium mb-1">
-              Password
-            </label>
-            <input
-              type="password"
-              {...register("password")}
-              placeholder="********"
-              className="w-full border border-gray-300 rounded px-3 py-2 text-text"
-            />
-            <p className="text-red-500 text-sm">{errors.password?.message}</p>
-          </div>
-
-          <div>
-            <label className="block text-text text-sm font-medium mb-1">
-              Confirm password
-            </label>
-            <input
-              type="password"
-              {...register("confirmPassword")}
-              placeholder="********"
-              className="w-full border border-gray-300 rounded px-3 py-2 text-text"
-            />
-            <p className="text-red-500 text-sm">
-              {errors.confirmPassword?.message}
-            </p>
-          </div>
-
-          <button
-            type="submit"
-            className="w-full bg-main-red text-background py-2 rounded font-semibold hover:bg-red-800 transition"
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="space-y-6"
           >
-            Sign up
-          </button>
-        </form>
+            <div>
+              <label className="block text-gray-700 text-sm font-semibold mb-2">
+                Full name
+              </label>
+              <input
+                type="text"
+                {...register("fullName")}
+                placeholder="John Doe"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200 focus:outline-none transition-all duration-200"
+              />
+              <p className="mt-1 text-red-500 text-sm">{errors.fullName?.message}</p>
+            </div>
 
-        <p className="text-text mt-4">
-          Already have an account?{" "}
-          <Link
-            to="/login"
-            className="text-main-red underline hover:text-red-800"
-          >
-            Log in here!
-          </Link>
-        </p>
+            <div>
+              <label className="block text-gray-700 text-sm font-semibold mb-2">
+                Email
+              </label>
+              <input
+                type="email"
+                {...register("email")}
+                placeholder="John@stud.noroff.no"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200 focus:outline-none transition-all duration-200"
+              />
+              <p className="mt-1 text-red-500 text-sm">{errors.email?.message}</p>
+            </div>
+
+            <div>
+              <label className="block text-gray-700 text-sm font-semibold mb-2">
+                Password
+              </label>
+              <input
+                type="password"
+                {...register("password")}
+                placeholder="********"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200 focus:outline-none transition-all duration-200"
+              />
+              <p className="mt-1 text-red-500 text-sm">{errors.password?.message}</p>
+            </div>
+
+            <div>
+              <label className="block text-gray-700 text-sm font-semibold mb-2">
+                Confirm password
+              </label>
+              <input
+                type="password"
+                {...register("confirmPassword")}
+                placeholder="********"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200 focus:outline-none transition-all duration-200"
+              />
+              <p className="mt-1 text-red-500 text-sm">
+                {errors.confirmPassword?.message}
+              </p>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full py-4 bg-cyan-600 text-white rounded-lg font-semibold hover:bg-cyan-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-md"
+            >
+              Sign up
+            </button>
+          </form>
+
+          <p className="text-center text-gray-600 mt-6">
+            Already have an account?{" "}
+            <Link
+              to="/login"
+              className="text-cyan-600 font-semibold hover:text-cyan-700 underline"
+            >
+              Log in here!
+            </Link>
+          </p>
+        </div>
       </div>
     );
   }
