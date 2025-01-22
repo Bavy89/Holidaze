@@ -1,4 +1,3 @@
-
 # Holidaze
 
 Holidaze is a hotel booking website developed as the final exam project for the Noroff Front End Developer studies. The site is designed to allow users to browse and book accommodations while providing a platform for administrators to manage listings and bookings effectively.
@@ -22,6 +21,18 @@ This project demonstrates the culmination of the skills and technologies learned
   - Manage customer bookings.
 
 This project leverages technologies such as HTML, CSS, JavaScript, React, and API handling to deliver a seamless user experience.
+
+---
+
+## Live Website
+
+You can visit the live website here: [Holidaze Live Site](https://holidazebaveado.netlify.app/)
+
+---
+
+## Project Management
+
+The KanBan board for this project can be found here: [Holidaze KanBan Board](https://github.com/users/Bavy89/projects/1)
 
 ---
 
