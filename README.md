@@ -3,8 +3,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/Bavy89/images/refs/heads/main/Images/Holidaze%20HomePage.png?token=GHSAT0AAAAAAC5PAXIPH3YWHK2XT6HA5ILCZ43NW6Q" 
        alt="Holidaze Homepage" 
-       width="500" 
-       style="border-radius: 10px; pointer-events: none;">
+       width="650">
 </p>
 
 
