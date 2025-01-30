@@ -1,9 +1,11 @@
 # Holidaze
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Bavy89/images/refs/heads/main/Images/Holidaze%20HomePage.png?token=GHSAT0AAAAAAC5PAXIPH3YWHK2XT6HA5ILCZ43NW6Q" 
-       alt="Holidaze Homepage" 
-       width="650">
+  <a href="https://holidazebaveado.netlify.app/" target="_blank">
+    <img src="https://raw.githubusercontent.com/Bavy89/images/refs/heads/main/Images/Holidaze%20HomePage.png?token=GHSAT0AAAAAAC5PAXIPH3YWHK2XT6HA5ILCZ43NW6Q" 
+         alt="Holidaze Homepage" 
+         width="650">
+  </a>
 </p>
 
 
