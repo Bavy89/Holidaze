@@ -7,12 +7,12 @@ This project demonstrates the culmination of the skills and technologies learned
 ---
 
 ## 🛠️ Technologies Used
-![React](https://img.shields.io/badge/React-18.2.0-blue?style=for-the-badge&logo=react)  
-![Vite](https://img.shields.io/badge/Vite-4.0-purple?style=for-the-badge&logo=vite)  
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript)  
-![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.0-blue?style=for-the-badge&logo=tailwindcss)  
-
-
+![React](https://img.shields.io/badge/React-blue?style=for-the-badge&logo=react)  
+![Vite](https://img.shields.io/badge/Vite-purple?style=for-the-badge&logo=vite)  
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript)  
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-blue?style=for-the-badge&logo=tailwindcss)  
+![HTML](https://img.shields.io/badge/HTML-orange?style=for-the-badge&logo=html5)  
+![CSS](https://img.shields.io/badge/CSS-blue?style=for-the-badge&logo=css3)  
 ---
 
 ## Website Overview
