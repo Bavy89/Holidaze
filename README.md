@@ -7,11 +7,11 @@ This project demonstrates the culmination of the skills and technologies learned
 ---
 
 ## 🛠️ Technologies Used
-- ⚡ **[Vite](https://vitejs.dev/)** – A fast build tool for modern web projects.
-- ⚛️ **[React](https://reactjs.org/)** – A JavaScript library for building user interfaces.
-- 🌐 **JavaScript** – The core programming language used.
-- 🎨 **[Tailwind CSS](https://tailwindcss.com/)** – A utility-first CSS framework for modern styling.
-- 🏗️ **HTML & CSS** – For structuring and styling the web pages.
+![React](https://img.shields.io/badge/React-18.2.0-blue?style=for-the-badge&logo=react)  
+![Vite](https://img.shields.io/badge/Vite-4.0-purple?style=for-the-badge&logo=vite)  
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript)  
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.0-blue?style=for-the-badge&logo=tailwindcss)  
+
 
 ---
 
