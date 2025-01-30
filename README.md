@@ -95,9 +95,16 @@ Contributions to Holidaze are welcome! Here’s how you can contribute:
 
 ---
 
-## Acknowledgment
+## Acknowledgments
 
-This project is my final exam for the **Noroff Front End Developer studies**. It represents the culmination of my learning journey and practical application of the skills I have developed throughout the program. Thank you for taking the time to explore my work!
+This project was developed as part of the curriculum at [Noroff School of Technology and Digital Media](https://www.noroff.no/).
+
+Special thanks to:
+
+- **Noroff**: For providing the API and project guidelines.
+- **React**: For the powerful library that made building the user interface efficient and effective.
+- **Tailwind CSS**: For the utility-first CSS framework that streamlined the styling process.
+- **Vercel**: For providing a seamless deployment platform.
 
 ---
 
