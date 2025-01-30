@@ -7,7 +7,7 @@ This project demonstrates the culmination of the skills and technologies learned
 ---
 
 ## 🛠️ Technologies Used
-
+- ⚡ **[Vite](https://vitejs.dev/)** – A fast build tool for modern web projects.
 - ⚛️ **[React](https://reactjs.org/)** – A JavaScript library for building user interfaces.
 - 🌐 **JavaScript** – The core programming language used.
 - 🎨 **[Tailwind CSS](https://tailwindcss.com/)** – A utility-first CSS framework for modern styling.
