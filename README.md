@@ -106,7 +106,7 @@ Contributions to Holidaze are welcome! Here’s how you can contribute:
 
 ## Acknowledgments
 
-This project was developed as part of the curriculum at [Noroff School of Technology and Digital Media](https://www.noroff.no/).
+This project was developed as part of the course at [Noroff School of Technology and Digital Media](https://www.noroff.no/).
 
 Special thanks to:
 
