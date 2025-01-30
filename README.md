@@ -123,6 +123,7 @@ Special thanks to:
 - **React**: For the powerful library that made building the user interface efficient and effective.
 - **Tailwind CSS**: For the utility-first CSS framework that streamlined the styling process.
 - **Netlify**: For providing deployment.
+- **FontAwesome** for awesome fonts!
 
 ---
 
