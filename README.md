@@ -6,6 +6,15 @@ This project demonstrates the culmination of the skills and technologies learned
 
 ---
 
+## 🛠️ Technologies Used
+
+- ⚛️ **[React](https://reactjs.org/)** – A JavaScript library for building user interfaces.
+- 🌐 **JavaScript** – The core programming language used.
+- 🎨 **[Tailwind CSS](https://tailwindcss.com/)** – A utility-first CSS framework for modern styling.
+- 🏗️ **HTML & CSS** – For structuring and styling the web pages.
+
+---
+
 ## Website Overview
 
 **Holidaze** is a modern and responsive website with the following key features:
