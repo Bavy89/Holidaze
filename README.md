@@ -122,7 +122,7 @@ Special thanks to:
 - **Noroff**: For providing the API and project guidelines.
 - **React**: For the powerful library that made building the user interface efficient and effective.
 - **Tailwind CSS**: For the utility-first CSS framework that streamlined the styling process.
-- **Vercel**: For providing a seamless deployment platform.
+- **Netlify**: For providing deployment.
 
 ---
 
