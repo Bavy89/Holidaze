@@ -9,6 +9,9 @@ export default {
         "text-light": "#4F4F4F",
         outline: "#A7A7A7",
         background: "#FFFDFC",
+        cyan: {
+          600: '#007A87'  
+        }
       },
       fontFamily: {
         Roboto: ["Roboto", "sans-serif"],
