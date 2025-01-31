@@ -1,7 +1,7 @@
 # Holidaze
 
 
-![Holidaze website screenshot](https://github.com/user-attachments/assets/4a2b2382-bf63-4415-b3e1-2a169d227063)
+![Holidaze website screenshot](https://github.com/user-attachments/assets/4a2b2382-bf63-4415-b3e1-2a169d227063](https://github.com/Bavy89/Holidaze/blob/main/images/Skjermbilde%202025-01-31%20kl.%2010.50.54.png?raw=true)
 
 
 Holidaze is a hotel booking website developed as the final exam project for the Noroff Front End Developer studies. The site is designed to allow users to browse and book accommodations while providing a platform for administrators to manage listings and bookings effectively.
