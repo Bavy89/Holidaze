@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://holidazebaveado.netlify.app/" target="_blank">
-    <img src="[https://raw.githubusercontent.com/Bavy89/images/refs/heads/main/Images/Holidaze%20HomePage.png?token=GHSAT0AAAAAAC5PAXIPH3YWHK2XT6HA5ILCZ43NW6Q](https://raw.githubusercontent.com/Bavy89/images/refs/heads/main/Images/Holidaze%20HomePage.png?token=GHSAT0AAAAAAC5MKHZO2IE7RQVTAG7IBR66Z44TOSQ)" 
+    <img src="https://raw.githubusercontent.com/Bavy89/images/refs/heads/main/Images/Holidaze%20HomePage.png?token=GHSAT0AAAAAAC5MKHZO2IE7RQVTAG7IBR66Z44TOSQ" 
          alt="Holidaze Homepage" 
          width="650">
   </a>
