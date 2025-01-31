@@ -62,7 +62,7 @@ const Navbar = () => {
     <>
       <header className={`fixed w-full top-0 z-50 transition-all duration-300 
         ${isScrolled 
-          ? 'bg-white/80 backdrop-blur-md shadow-md py-2' 
+          ? 'bg-white/25 backdrop-blur-md shadow-md py-2' 
           : 'bg-gradient-to-r from-cyan-600 to-cyan-500 py-4'}`}>
         <div className="max-w-7xl mx-auto flex justify-between items-center px-6">
           <Link
