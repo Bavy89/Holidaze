@@ -205,42 +205,97 @@ const SingleVenuePage = () => {
                 </button>
 
                 {isCalendarOpen && (
-                  <div className="mt-4 bg-white p-4 rounded-lg shadow-sm border border-gray-200">
-                    <Calendar
-                      tileDisabled={({ date }) =>
-                        isDateDisabled(date, venue.bookings)
-                      }
-                      selectRange
-                      onChange={setSelectedDates}
-                      value={selectedDates}
-                      tileClassName={({ date }) =>
-                        isDateDisabled(date, venue.bookings)
-                          ? "bg-gray-100 text-gray-400"
-                          : null
-                      }
-                    />
+  <div className="mt-4 bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+    <Calendar
+      tileDisabled={({ date }) =>
+        isDateDisabled(date, venue.bookings)
+      }
+      selectRange
+      onChange={setSelectedDates}
+      value={selectedDates}
+      tileClassName={({ date, view }) => {
+        // Helper function to compare dates without time
+        const isSameDay = (date1, date2) => {
+          if (!date1 || !date2) return false;
+          return (
+            date1.getFullYear() === date2.getFullYear() &&
+            date1.getMonth() === date2.getMonth() &&
+            date1.getDate() === date2.getDate()
+          );
+        };
 
-                    <div className="mt-4 flex justify-between items-center">
-                      <p className="text-gray-700">
-                        Total: ${calculateTotalPrice()}
-                      </p>
-                      <div className="flex space-x-3">
-                        <button
-                          onClick={() => setSelectedDates([null, null])}
-                          className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200"
-                        >
-                          Clear
-                        </button>
-                        <button
-                          onClick={closeCalendar}
-                          className="px-4 py-2 bg-cyan-600 text-white rounded-lg hover:bg-cyan-700"
-                        >
-                          Apply
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                )}
+        // Helper function to check if date is between range
+        const isInRange = (date, start, end) => {
+          if (!start || !end) return false;
+          const normalizedDate = new Date(date.setHours(0, 0, 0, 0));
+          const normalizedStart = new Date(start.setHours(0, 0, 0, 0));
+          const normalizedEnd = new Date(end.setHours(0, 0, 0, 0));
+          return normalizedDate >= normalizedStart && normalizedDate <= normalizedEnd;
+        };
+
+        let classes = 'relative hover:bg-cyan-50 hover:shadow-sm transition-all duration-200';
+        
+        if (isDateDisabled(date, venue.bookings)) {
+          return 'bg-gray-100 text-gray-400 cursor-not-allowed hover:bg-gray-200';
+        }
+        
+        // Today's date
+        if (isSameDay(date, new Date())) {
+          classes += ' border-2 border-cyan-400';
+        }
+
+        // Selected date range styling
+        if (selectedDates && selectedDates[0] && selectedDates[1]) {
+          const [start, end] = selectedDates;
+
+          if (isInRange(date, start, end)) {
+            classes += ' bg-gradient-to-r from-[#908F8F]/20 to-[#908F8F]/30 hover:from-[#908F8F]/30 hover:to-[#908F8F]/40';
+            
+            // Start date
+            if (isSameDay(date, start)) {
+              classes += ' rounded-l-lg bg-[#908F8F] text-white hover:bg-[#807F7F]';
+            }
+            // End date
+            if (isSameDay(date, end)) {
+              classes += ' rounded-r-lg bg-[#908F8F] text-white hover:bg-[#807F7F]';
+            }
+            if (!isSameDay(date, start) && !isSameDay(date, end) && isInRange(date, start, end)) {
+              classes += ' bg-opacity-50 hover:bg-opacity-75';
+            }
+          }
+        }
+        
+        // Hover state for non-selected dates
+        if (!selectedDates || !isInRange(date, selectedDates[0], selectedDates[1])) {
+          classes += ' hover:bg-[#908F8F]/10 hover:scale-105';
+        }
+        
+        return classes;
+      }}
+      className="select-none" // Prevent text selection
+    />
+
+    <div className="mt-4 flex justify-between items-center">
+      <p className="text-gray-700">
+        Total: ${calculateTotalPrice()}
+      </p>
+      <div className="flex space-x-3">
+        <button
+          onClick={() => setSelectedDates([null, null])}
+          className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200"
+        >
+          Clear
+        </button>
+        <button
+          onClick={closeCalendar}
+          className="px-4 py-2 bg-cyan-600 text-white rounded-lg hover:bg-cyan-700"
+        >
+          Apply
+        </button>
+      </div>
+    </div>
+  </div>
+)}
 
                 <div className="mt-4">
                   <label className="block text-sm font-medium text-gray-700 mb-1">
