@@ -104,7 +104,7 @@ const HomePage = () => {
            backgroundImage: 'url("../../images/HeroImage.png")',
            transform: 'translate3d(0, 0, 0)',
            height: '120%',
-           top: '-10%'
+           top: '-10%' 
          }}
        >
          <div className="absolute inset-0 bg-black/30"></div>
