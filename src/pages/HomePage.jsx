@@ -101,7 +101,7 @@ const HomePage = () => {
        <div 
          className="absolute inset-0 bg-cover bg-center parallax-bg"
          style={{
-           backgroundImage: 'url("../../images/HeroImage.png")',
+           backgroundImage: 'url("https://images.unsplash.com/photo-1567697764010-09b279bc568d?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
            transform: 'translate3d(0, 0, 0)',
            height: '120%',
            top: '-10%' 
