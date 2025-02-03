@@ -33,7 +33,7 @@ const Card = ({
 
         <div className="mt-4 space-y-3">
           <div className="space-y-1">
-            <h3 className="text-lg font-semibold text-cyan-600 group-hover:text-cyan-700">
+            <h3 className="text-lg font-semibold text-cyan-600 group-hover:text-cyan-700 break-words whitespace-normal">
               {title || "Unnamed Venue"}
               {location ? `, ${location}` : ""}
             </h3>
